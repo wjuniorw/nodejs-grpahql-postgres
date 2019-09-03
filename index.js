@@ -1,5 +1,5 @@
 import express from 'express'
-import { ApolloServer, gql } from 'apollo-server-express'
+import { ApolloServer } from 'apollo-server-express'
 
 import models from './models'
 import typeDefs from './schema'
