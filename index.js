@@ -25,8 +25,8 @@ const server = new ApolloServer({
 server.applyMiddleware({ app , path: '/slack' })
 
 // clear db:
-models.sequelize.sync({force: true}).then(() => {
-// models.sequelize.sync({}).then((err) => {
+//models.sequelize.sync({force: true}).then(() => {
+ models.sequelize.sync().then((err) => {
   // if (err) {
   //   process.exit(0)
   //   console.log('server error ..................', err)
